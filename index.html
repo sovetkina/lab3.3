@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Лабораторная работа 3</title>
+	</head>
+	<body>
+		<script>
+			var numbers=[];
+			for(var i=0; i < 5; i++){
+				numbers[i] = +prompt('Введите число');
+			}
+			var n = [];
+			for (i=0; i<numbers.length; i++){
+				if(numbers[i]<=1){
+					n.unshift(numbers[i]);
+					n.sort((a, b)=>a-b);
+				}
+				else{
+					n.push(numbers[i]);
+					n.sort((a, b)=>a-b);
+				}
+			}
+			alert(n); 
+		</script>
+	</body>
+</html>
